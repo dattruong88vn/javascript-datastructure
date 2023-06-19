@@ -2,62 +2,90 @@
 	DATA STRUCTURE JS
 	
 	https://replit.com/@dattruong88vn/Learn-Data-Structure-JS#index.js
+
+	A. BUILD-IN DATA STRUCTURE
 	
-	1. Array:
-		1.1 Đặc điểm:
-			- Array là 1 data structure, nó có thể lưu trữ một bộ các giá trị.
-			- Array có thể lưu trữ nhiều loại data khác nhau, như string, number, boolean, và objects có thể lưu trữ trên cùng 1 array.
-			- Array có thể thay đổi chiều dài, không cần phải khai báo độ dài của array trước khi khởi tạo.
-			- Chỉ số index của array bắt đầu từ 0 và tăng dần.
-			- Array có tính lặp, nên có thể dùng vòng lặp để duyệt array.
-			
-		1.2. Big-O Time complexity
-			- Insert/Remove from end: O(1);
-			- Insert/Remove from beginning: O(n);
-			- Access: O(1)
-			- Search: O(n)
-			- push/pop: O(1)
-			- shift/unshift/concat/slice/splice: O(n)
-			- forEach/map/filter/reduce: O(n)
-	
-	2. Object:
-		2.1. Đặc điểm:
-			- Object là một tập hợp các cặp key-value không có thứ tự. Key bắt buộc là một string hoặc symbol, trong khi đó value có thể là bất cứ loại dữ liệu nào.
-			- Để lấy được value, phải gọi đúng tên key. Có thể sử dụng dấu chấm hoặc ngoặc nhọn để lấy được value.
-				Ví dụ: obj.key hoặc obj[key]
-			- Object không có tình lặp.
-			
-		2.2. Big-O Time complexity:
-			- Insert: O(1)
-			- Delete: O(1)
-			- Access: O(1)
-			- Search: O(n)
-			- Object.keys: O(n)
-			- Object.values: O(n)
-			- Object.entries: O(n)
+		1. Array:
+			1.1 Đặc điểm:
+				- Array là 1 data structure, nó có thể lưu trữ một bộ các giá trị.
+				- Array có thể lưu trữ nhiều loại data khác nhau, như string, number, boolean, và objects có thể lưu trữ trên cùng 1 array.
+				- Array có thể thay đổi chiều dài, không cần phải khai báo độ dài của array trước khi khởi tạo.
+				- Chỉ số index của array bắt đầu từ 0 và tăng dần.
+				- Array có tính lặp, nên có thể dùng vòng lặp để duyệt array.
+				
+			1.2. Big-O Time complexity
+				- Insert/Remove from end: O(1);
+				- Insert/Remove from beginning: O(n);
+				- Access: O(1)
+				- Search: O(n)
+				- push/pop: O(1)
+				- shift/unshift/concat/slice/splice: O(n)
+				- forEach/map/filter/reduce: O(n)
 		
-	3. Set
-		3.1. Đặc điểm:
-			- Set là data structure dùng để lưu trữ một tập hợp các giá trị. Các giá trị này phải unique (không được trùng)
-			- Set giống Array có thể lưu trữ nhiều kiểu dữ liệu khác nhau.
-			- Set không cần khai báo size
-			- Set không có thứ tự index như Array
-			- Set có tính lặp.
+		2. Object:
+			2.1. Đặc điểm:
+				- Object là một tập hợp các cặp key-value không có thứ tự. Key bắt buộc là một string hoặc symbol, trong khi đó value có thể là bất cứ loại dữ liệu nào.
+				- Để lấy được value, phải gọi đúng tên key. Có thể sử dụng dấu chấm hoặc ngoặc nhọn để lấy được value.
+					Ví dụ: obj.key hoặc obj[key]
+				- Object không có tình lặp.
+				
+			2.2. Big-O Time complexity:
+				- Insert: O(1)
+				- Delete: O(1)
+				- Access: O(1)
+				- Search: O(n)
+				- Object.keys: O(n)
+				- Object.values: O(n)
+				- Object.entries: O(n)
 			
-		3.2. So sánh với Array:
-			- Array lưu được giá trị giống nhau, Set thì không chỉ lưu các giá trị unique;
-			- Array có đánh chỉ mục index, Set thì không.
-			- Search và Delete giá trị trong Set nhanh hơn Array.
-	
-	4. Map
-		4.1. Đặc điểm:
-			- Map là một bộ các cặp key-value có thứ tự. Cả key và value đều có thể là bất cứ kiểu dữ liệu nào.
-			- Để lấy value, cần sử dụng key tương ứng.
-			- Map có tính lặp.
-		4.1. So sánh với Object:
-			- Object không có thứ tự, Map thì có.
-			- Key trong object phải là string hoặc symbol, trong khi map có thể là kiểu dữ liệu bất kì.
-			- Object có prototype và một số key default, những key này có thể bị trùng với key do bạn tạo ra. Map không có bất kì key default nào.
-			- Object không có tính lặp, Map thì có.
-			- Số items trong một object có thể xác định thủ công trong khi Map chỉ có thể xác định thông qua thuộc tính size.
-			- Khi lưu trữ, object có thể nhận giá trị là một function trong khi Map chỉ có giá trị đơn thuần là data.
+		3. Set
+			3.1. Đặc điểm:
+				- Set là data structure dùng để lưu trữ một tập hợp các giá trị. Các giá trị này phải unique (không được trùng)
+				- Set giống Array có thể lưu trữ nhiều kiểu dữ liệu khác nhau.
+				- Set không cần khai báo size
+				- Set không có thứ tự index như Array
+				- Set có tính lặp.
+				
+			3.2. So sánh với Array:
+				- Array lưu được giá trị giống nhau, Set thì không chỉ lưu các giá trị unique;
+				- Array có đánh chỉ mục index, Set thì không.
+				- Search và Delete giá trị trong Set nhanh hơn Array.
+		
+		4. Map
+			4.1. Đặc điểm:
+				- Map là một bộ các cặp key-value có thứ tự. Cả key và value đều có thể là bất cứ kiểu dữ liệu nào.
+				- Để lấy value, cần sử dụng key tương ứng.
+				- Map có tính lặp.
+			4.1. So sánh với Object:
+				- Object không có thứ tự, Map thì có.
+				- Key trong object phải là string hoặc symbol, trong khi map có thể là kiểu dữ liệu bất kì.
+				- Object có prototype và một số key default, những key này có thể bị trùng với key do bạn tạo ra. Map không có bất kì key default nào.
+				- Object không có tính lặp, Map thì có.
+				- Số items trong một object có thể xác định thủ công trong khi Map chỉ có thể xác định thông qua thuộc tính size.
+				- Khi lưu trữ, object có thể nhận giá trị là một function trong khi Map chỉ có giá trị đơn thuần là data.
+
+	B. CUSTOM DATA STRUCTURE
+
+		1. Stack:
+			1.1. Đặc điểm:
+				- Stack data structure là một tập hợp các phần tử theo trình tự và tuân theo quy tắc Last In First Out (LIFO).
+				- Phần tử cuối cùng được thêm vào Stact là phần tử đầu tiên được lấy ra.
+				- Stack là một kiểu dữ liệu trừu tượng, nó được định nghĩa theo cách nó hoạt động hơn là một hình mẫu toán học.
+				- Stack data structure hỗ trợ 2 thao tác chính:
+					+ Push: thêm 1 phần tử vào tập hợp.
+					+ Pop: xóa phần tử được thêm vào gần nhất từ tập hợp.
+			1.2. Sử dụng stack khi nào:
+				- Browser history tracking
+				- Undo operation when typing
+				- Expression conversions
+				- Call stack in Javascript runtime
+
+
+
+
+
+
+
+
+
+
