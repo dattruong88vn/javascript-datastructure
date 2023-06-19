@@ -57,3 +57,26 @@ set.clear(); // remove all item
 for (const item of set) {
   //   console.log("loop", item);
 }
+
+// -----------------------------------------------------
+
+/**
+ * 4. MAP
+ */
+const map = new Map([
+  ["a", 1],
+  ["b", 2],
+]);
+
+map.set("c", 3);
+map.set("d", 4);
+map.delete("c");
+
+// console.log("has method", map.has("b"));
+// console.log("size attribute", map.size);
+
+map.clear();
+
+for (const [key, value] of map) {
+  //   console.log(`${key}: ${value}`);
+}
