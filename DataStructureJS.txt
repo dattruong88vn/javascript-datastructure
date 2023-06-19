@@ -80,6 +80,19 @@
 				- Expression conversions
 				- Call stack in Javascript runtime
 
+		2. Queue
+			2.1. Đặc điểm:
+				- Queue data structure là một tập hợp các phần tử theo trình tự và tuân theo quy tắc First In First Out (FIFO).
+				- Phần tử đầu tiên được thêm vào Queue là phần tử đầu tiên được lấy ra.
+				- Queue là một kiểu dữ liệu trừu tượng, nó được định nghĩa theo cách nó hoạt động hơn là một hình mẫu toán học.
+				- Queue data structure hỗ trợ 2 thao tác chính:
+					+ Enqueue: thêm 1 phần tử vào cuối cùng của tập hợp.
+					+ Dequeue: xóa phần tử đầu tiên của tập hợp.
+			2.2. Sử dụng Queue khi nào:
+				- Printers
+				- CPU Task scheduling
+				- Callback Queue in Javascript runtime
+
 
 
 
