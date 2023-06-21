@@ -93,6 +93,20 @@
 				- CPU Task scheduling
 				- Callback Queue in Javascript runtime
 
+		3. Circular Queue:
+			3.1. Đặc điểm:
+				- Kích thước của Circular Queue cố định, và sử dụng một block bộ nhớ để lưu trữ. Và phần tử đầu tiên có liên kết với phần tử cuối cùng.
+				- Cũng tương tự Circular Buffer hoặc Ring Buffer và tuân theo nguyên tắc FIFO.
+				- Tái sử dụng vùng trống bộ nhớ khi thực hiện dequeue để thực hiện enqueue.
+				- Sử dụng cho 2 thao tác:
+					+ Enqueue: thêm 1 phần tử vào cuối cùng của tập hợp.
+					+ Dequeue: xóa phần tử đầu tiên của tập hợp.
+			3.2. Sử dụng Circular Queue:
+				- Clock
+				- Streaming data
+				- Traffic lights
+				
+
 
 
 
