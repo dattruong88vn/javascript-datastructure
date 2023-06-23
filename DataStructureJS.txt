@@ -105,6 +105,20 @@
 				- Clock
 				- Streaming data
 				- Traffic lights
+
+		4. Linked List:
+			4.1. Đặc điểm:
+				- Linked List là một cấu trúc dữ liệu tuyến tính, nó bao gồm một chuỗi các node liên kết với nhau.
+				- Mỗi node chứa data và một pointer chỉ định đến node tiếp theo.
+				- List các phần tử có thể dễ dàng thêm hoặc xóa mà không cần đánh dấu lại chỉ mục hay tổ chức lại toàn bộ cấu trúc.
+				- Truy xuất đến một phần tử bất kỳ là điều không khả thi, và quá trình truy xuất đến 1 phần tử có độ phức tạp thời gian tuyến tính.
+				- Linked List được sử dụng cho 3 thao tác:
+					+ Insertion: thêm 1 phần tử vào đầu cuối hoặc một vị trí trong list.
+					+ Deletion: xóa một phần tử dựa vào index hoặc giá trị
+					+ Search: tìm một phần tử và trả về giá trị
+			4.2. Ứng dụng của Linked List:
+				- Tất cả các ứng dụng của stacks và queue là những ứng dụng Linked List;
+				- Image viewer
 				
 
 
