@@ -1,3 +1,9 @@
+//value 1
+
+// value1 - next1 --> value2 - next2 --> value3 - next3 --> value4 - null
+// null
+// value1 - null --> prev null -> this.head = curr.next
+
 class Node {
   constructor(value) {
     this.value = value;
@@ -89,6 +95,56 @@ class LinkedList {
     return removeNode.value;
   }
 
+  removeByValue(value) {
+    if (this.size === 0) return null;
+
+    if (this.head.value === value) {
+      this.head = this.head.next;
+      this.size--;
+      return value;
+    }
+
+    let prev = this.head;
+    while (prev.next && prev.next.value !== value) {
+      prev = prev.next;
+    }
+
+    if (prev.next) {
+      const removeNode = prev.next;
+      prev.next = removeNode.next;
+      this.size--;
+      return value;
+    }
+
+    return null;
+  }
+
+  search(value) {
+    let i = 0;
+    let curr = this.head;
+
+    while (curr) {
+      if (curr.value === value) return i;
+      curr = curr.next;
+      i++;
+    }
+
+    return -1;
+  }
+
+  reverse() {
+    let prev = null;
+    let curr = this.head;
+
+    while (curr) {
+      let next = curr.next;
+      curr.next = prev;
+      prev = curr;
+      curr = next;
+    }
+    this.head = prev;
+  }
+
   print() {
     if (this.isEmpty()) {
       console.log("list is empty");
@@ -106,10 +162,16 @@ class LinkedList {
 }
 
 const list = new LinkedList();
+console.log("search", list.search(108));
+list.print();
+
 console.log("isEmpty", list.isEmpty());
 console.log("getSize", list.getSize());
 
 list.insert(108, 0);
+list.print();
+
+console.log("removeByValue", list.removeByValue(108));
 list.print();
 
 list.prepend(10);
@@ -126,9 +188,24 @@ list.print();
 list.insert(9, 2);
 list.print();
 
-console.log("remove", list.remove(4));
-list.print();
-console.log("remove", list.remove(5));
-list.print();
-console.log("remove", list.remove(0));
+// console.log("remove", list.remove(4));
+// list.print();
+// console.log("remove", list.remove(5));
+// list.print();
+// console.log("remove", list.remove(0));
+// list.print();
+
+// console.log("removeByValue", list.removeByValue(108));
+// list.print();
+// console.log("removeByValue", list.removeByValue(30));
+// list.print();
+
+// console.log("search", list.search(108));
+// list.print();
+// console.log("search", list.search(30));
+// list.print();
+// console.log("search", list.search(99));
+// list.print();
+
+list.reverse();
 list.print();
