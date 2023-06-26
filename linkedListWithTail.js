@@ -95,34 +95,3 @@ class LinkedList {
     }
   }
 }
-
-const list = new LinkedList();
-list.print();
-
-console.log("isEmpty", list.isEmpty());
-console.log("getSize", list.getSize());
-
-list.append(10);
-
-list.print();
-list.prepend(5);
-
-list.print();
-list.append(20);
-
-list.print();
-list.prepend(40);
-
-list.print();
-list.append(299);
-
-list.print();
-list.append(108);
-
-list.removeFromFront();
-list.print();
-list.removeFromFront();
-list.print();
-
-list.removeFromEnd();
-list.print();
