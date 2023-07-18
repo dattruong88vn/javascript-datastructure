@@ -120,6 +120,19 @@
 				- Tất cả các ứng dụng của stacks và queue là những ứng dụng Linked List;
 				- Image viewer
 				
+		5. Hash Table
+			5.1. Đặc điểm:
+				- Hash table còn được gọi là Hash Map, là một kiểu cấu trúc dữ liệu được sử dụng để lưu trữ các cặp key-value
+				- Với key, bạn có thể truy xuất được value của key đó một cách nhanh chóng.
+				- JavaScript Object là một cấu trúc dữ liệu được triển khai từ Hash Table. Tuy nhiên, Object class có thể thêm vào các key của chính nó.
+				Những keys mà bạn thêm vào có thể bị conflict và overwrite nhưng thuộc tính mặc định.
+				- Maps cũng được giới thiệu từ năm 2015 cho phép bạn lưu trữ cặp key-value.
+				- Viết một hash table là một câu hỏi phỏng vấn JavaScript rất phổ biến.
+			5.2. Ứng dụng của Hash Table:
+				- Được sử dụng khi cần thời gian tìm kiếm là constant và có yêu cầu Insertion.
+				- Database indexing
+				- Caches
+
 
 
 
