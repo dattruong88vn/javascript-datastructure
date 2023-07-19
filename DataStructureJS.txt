@@ -188,6 +188,13 @@
 						* Duyệt Right Child Node (đệ quy)
 						* In value của Node
 				- Breadth First Search (BFS):
+					+ Create queue
+					+ Enqueue root node
+					+ Nếu trong queue còn node thực hiện các bước sau:
+						++ Dequeue node
+						++ In value của node
+						++ Enqueue Node left
+						++ Enqueue Node right
 
 
 
