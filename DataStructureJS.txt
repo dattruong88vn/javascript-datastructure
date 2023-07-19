@@ -172,6 +172,23 @@
 				- Sorting
 				- Tích hợp abstract data types như lookup tables và priority queues
 
+			7.5. Tree Traversal: (Duyệt Tree)
+				- Depth First Search (DFS):
+					+ Duyệt các node từ root, duyệt đến các Leaf Nodes rồi Backtracking
+					+ Preorder: 
+						* In value của Node
+						* Duyệt Left Child Node (đệ quy)
+						* Duyệt Right Child Node (đệ quy)
+					+ Inorder:
+						* Duyệt Left Child Node (đệ quy)
+						* In value của Node
+						* Duyệt Right Child Node (đệ quy)
+					+ Postorder:
+						* Duyệt Left Child Node (đệ quy)
+						* Duyệt Right Child Node (đệ quy)
+						* In value của Node
+				- Breadth First Search (BFS):
+
 
 
 
