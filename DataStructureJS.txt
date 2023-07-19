@@ -196,6 +196,9 @@
 						++ Enqueue Node left
 						++ Enqueue Node right
 
+			7.6. Min/Max:
+				
+
 
 
 
