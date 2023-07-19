@@ -133,12 +133,44 @@
 				- Database indexing
 				- Caches
 
+		6. Tree
+			6.1. Đặc điểm
+				- Tree là dạng cấu trúc dữ liệu theo cấp bậc, bao gồm các nodes được liên kết thông qua edges.
+				- Tree là dạng cấu trúc dữ liệu non-linear, nó khác với arrays, linked list, stacks và queues.
+				- Với cấu trúc dạng linear, thời gian tìm kiếm tỷ lệ thuận với kích thước của dữ liệu. Tuy nhiên, với Tree với cấu trúc non-linear, cho phép nhanh chóng và dễ dàng tiếp cận dữ liệu.
+				- Tree sẽ không có bất cứ vòng lặp hay cycles.
+			6.2. Ứng dụng:
+				- File systems hoặc cấu trúc thư mục.
+				- Family Tree
+				- Organisation tree.
+				- DOM
+				- Chat bots
+				- Abtract syntax trees.
+			6.3. Terminology
+				- Parent Nodes/Child Nodes/Edges.
+				- Root node: ko có Parent
+				- Leaf nodes: ko có children
+				- Sibling nodes: có chung parent
+				- Path node: danh sách các node từ root đến node chỉ định.
+				- Distance: số edges giữa 2 nodes.
+				- Degree: số children của 1 node.
+				- Depth: số edges từ root đến node chỉ định.
+				- Height: số edges tối đa từ một leaf node đến node chỉ định.
 
-
-
-
-
-
+		7. Binary Tree:
+			7.1. Định nghĩa: là Tree với mỗi node chỉ có tối đa 2 children (được gọi là left và right)
+			7.2. Binary Search Tree (BST):
+				- Value ở child node bên TRÁI phải có giá trị NHỎ hơn parent node.
+				- Value ở child node bên PHẢI phải có giá trị LỚN hơn parent node.
+			7.3. Các phương thức của Binary Tree:
+				- Insertion: thêm node vào tree
+				- Search: tìm một node dựa vào value
+				- DFS và BFS: duyệt qua tất cả các nodes của tree
+				- Deletion: xóa một node dựa vào value.
+			7.4. Ứng dụng:
+				- Searching
+				- Sorting
+				- Tích hợp abstract data types như lookup tables và priority queues
 
 
 
