@@ -74,6 +74,25 @@ class DoublyLinkedList {
     return this.size === 0;
   }
 
+  reverse() {
+    if (this.isEmpty()) return;
+
+    let current = this.head;
+    this.head = this.tail;
+    this.tail = current;
+
+    while (current) {
+      const next = current.next;
+      const prev = current.prev;
+
+      current.next = prev;
+      current.prev = next;
+
+      current = next;
+    }
+    this.head.prev = null;
+  }
+
   getSize() {
     return this.size;
   }
@@ -108,20 +127,3 @@ class DoublyLinkedList {
 }
 
 const list = new DoublyLinkedList();
-console.log(list.isEmpty());
-list.prepend(10);
-list.prepend(20);
-list.prepend(30);
-list.append(40);
-
-list.print();
-list.printReserve();
-
-console.log(list.removeFromFront());
-list.print();
-console.log(list.removeFromEnd());
-list.print();
-console.log(list.removeFromFront());
-list.print();
-console.log(list.removeFromFront());
-list.print();
