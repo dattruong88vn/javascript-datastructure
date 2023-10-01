@@ -110,30 +110,43 @@ class BinarySearchTree {
   }
 
   delete(value) {
+    // delete node method return new node after delete and update
+    // start from root and recursion inside
     this.root = this.deleteNode(this.root, value);
   }
 
-  deleteNode(root, value) {
-    if (root === null) {
-      return root;
+  deleteNode(node, value) {
+    if (node === null) {
+      return node;
     }
-    if (value < root.value) {
-      root.left = this.deleteNode(root.left, value);
-    } else if (value > root.value) {
-      root.right = this.deleteNode(root.right, value);
+    // if value not equal with node.value
+    // check node.right or node.left with value depends condition
+    if (value > node.value) {
+      node.right = this.deleteNode(node.right, value);
+    } else if (value < node.value) {
+      node.left = this.deleteNode(node.left, value);
     } else {
-      if (!root.left && !root.right) {
+      // case node.value equal value
+      // no child
+      if (!node.left && !node.right) {
         return null;
       }
-      if (!root.left) {
-        return root.right;
-      } else if (!root.right) {
-        return root.left;
+
+      // only one child
+      if (!node.right) {
+        return node.left;
+      } else if (!node.left) {
+        return node.right;
       }
-      root.value = this.min(root.right); // lấy giá trị min của right thay cho value của node
-      root.right = this.deleteNode(root.right, root.value); // xóa giá trị min vừa lấy trong right
+
+      // 2 child
+      // get min value of right subtree
+      root.value = this.min(node.right);
+
+      // delete node store min value and update right subtree
+      node.right = this.deleteNode(node.right, root.value);
     }
-    return root;
+    return node;
   }
 }
 
